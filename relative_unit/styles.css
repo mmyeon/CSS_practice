@@ -1,18 +1,31 @@
-body {
-  font-size: 16px;
+:root {
+  /* 14/16 (desired px / inherited px)*/
+  /* 모바일용 */
+  font-size: 0.75em;
 }
 
-/* em 단위 사용 */
-/* ul {
-  font-size: 0.8em;
+/* 미디어 쿼리마다 폰트사이즈 적용하기 */
+@media (min-width: 800px) {
+  :root {
+    font-size: 0.875em;
+  }
 }
 
-ul ul {
-  font-size: 1em;
-} */
+@media (min-width: 1200px) {
+  :root {
+    font-size: 1em;
+  }
+}
 
-/* rem 단위 사용 */
+.panel {
+  padding: 1em;
+  border-radius: 0.5em;
+  border: 1px solid#999;
+}
 
-ul {
+.panel > h2 {
+  margin-top: 0;
   font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
