@@ -1,14 +1,32 @@
 /* CSS 변수선언*/
 :root {
-  --main-font: Helvetica, Arial, sans-serif;
-  --brand-color: #369;
+  --main-bg: #fff;
+  --main-color: #000;
 }
 
-/* CSS 변수사용 */
-.about-us {
-  /* 첫번째 parameter가 정의되지 않은 경우 두 번째 parameter를 대신
-  사용 */
-  /* fallback값(대체값) 제공 */
-  font-family: var(--main-font, sans-serif);
-  color: var(--secondary-color, blue);
+/* CSS 변수 사용 */
+.panel {
+  font-size: 1rem;
+  padding: 1em;
+  border: 0.5px solid #999;
+  border-radius: 0.5rem;
+  color: var(--main-color);
+  background-color: var(--main-bg);
+}
+
+.panel > h2 {
+  margin-top: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* .dark의 속성이 자식에게 상속됨 */
+.dark {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #999;
+  /* 변수 다시 정의내리기 */
+  --main-bg: #333;
+  --main-color: #fff;
 }
