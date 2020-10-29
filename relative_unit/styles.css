@@ -1,0 +1,18 @@
+.padded {
+  font-size: 16px;
+  padding: 2em;
+}
+
+.box {
+  padding: 1em;
+  border-radius: 1em;
+  background-color: lightgray;
+}
+
+.box-small {
+  font-size: 12px;
+}
+
+.box-large {
+  font-size: 18px;
+}
