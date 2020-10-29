@@ -1,39 +1,6 @@
-:root {
-  /* 14/16 (desired px / inherited px)*/
-  /* 모바일용 */
-  font-size: 0.75em;
-}
-
-/* 미디어 쿼리마다 폰트사이즈 적용하기 */
-@media (min-width: 800px) {
-  :root {
-    font-size: 0.875em;
-  }
-}
-
-@media (min-width: 1200px) {
-  :root {
-    font-size: 1em;
-  }
-}
-
-.panel {
-  /* 자체적인 폰트사이즈를 가짐 */
-  font-size: 1rem;
-  padding: 1em;
-  border: 1px solid#999;
-  border-radius: 0.5em;
-}
-
-/* 선택자 명확하게*/
-/* .panel.large는 클래스 이름이 panel large를 뜻함 */
-.panel.large {
-  font-size: 1.2rem;
-}
-
-.panel > h2 {
-  margin-top: 0;
-  font-size: 0.8rem;
-  font-weight: bold;
-  text-transform: uppercase;
+.square {
+  /* width: 90vw; */
+  width: 90vmin;
+  height: 90vmin;
+  background: #999;
 }
