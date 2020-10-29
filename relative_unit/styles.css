@@ -1,5 +1,14 @@
+/* CSS 변수선언*/
 :root {
-  /* 0.5em = 최소 폰트 사이즈 크기 */
-  /* 1vw 반응형 수치 */
-  font-size: calc(0.5em + 1vw);
+  --main-font: Helvetica, Arial, sans-serif;
+  --brand-color: #369;
+}
+
+/* CSS 변수사용 */
+.about-us {
+  /* 첫번째 parameter가 정의되지 않은 경우 두 번째 parameter를 대신
+  사용 */
+  /* fallback값(대체값) 제공 */
+  font-family: var(--main-font, sans-serif);
+  color: var(--secondary-color, blue);
 }
