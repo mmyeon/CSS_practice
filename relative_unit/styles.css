@@ -18,9 +18,17 @@
 }
 
 .panel {
+  /* 자체적인 폰트사이즈를 가짐 */
+  font-size: 1rem;
   padding: 1em;
-  border-radius: 0.5em;
   border: 1px solid#999;
+  border-radius: 0.5em;
+}
+
+/* 선택자 명확하게*/
+/* .panel.large는 클래스 이름이 panel large를 뜻함 */
+.panel.large {
+  font-size: 1.2rem;
 }
 
 .panel > h2 {
