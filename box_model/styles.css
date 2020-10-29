@@ -2,3 +2,26 @@ body {
   background-color: #eee;
   font-family: Helvetica, Arial, sans-serif;
 }
+
+header {
+  color: white;
+  background-color: #0072b0;
+  border-radius: 0.5em;
+}
+
+/* Fixes IE bug */
+main {
+  display: block;
+}
+
+.main {
+  background: white;
+  border-radius: 0.5em;
+}
+
+.sidebar {
+  /* padding 적용하니까 화면에 보이기 시작 */
+  padding: 1.5em;
+  background: white;
+  border-radius: 0.5em;
+}
