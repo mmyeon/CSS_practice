@@ -1,6 +1,5 @@
-.square {
-  /* width: 90vw; */
-  width: 90vmin;
-  height: 90vmin;
-  background: #999;
+:root {
+  /* 0.5em = 최소 폰트 사이즈 크기 */
+  /* 1vw 반응형 수치 */
+  font-size: calc(0.5em + 1vw);
 }
