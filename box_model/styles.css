@@ -1,7 +1,11 @@
+:root {
+  box-sizing: border-box;
+}
+
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
@@ -9,10 +13,20 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Globally space stacked items with the lobotomized owl  */
+body * + * {
+  margin-top: 1.5em;
+}
+
 header {
-  color: white;
+  padding: 1em 1.5em;
+  color: #fff;
   background-color: #0072b0;
   border-radius: 0.5em;
+}
+
+.container {
+  display: flex;
 }
 
 main {
@@ -20,12 +34,40 @@ main {
 }
 
 .main {
+  width: 70%;
+  padding: 1em 1.5em;
   background-color: #fff;
   border-radius: 0.5em;
 }
 
 .sidebar {
+  width: 30%;
   padding: 1.5em;
-  background: white;
+  margin-top: 0;
+  margin-left: 1.5em;
+  background: #fff;
   border-radius: 0.5em;
+}
+
+.button-link {
+  display: block;
+  padding: 0.5em;
+  color: #fff;
+  background: #0090c9;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* 동위선택자 */
+/* .button-link + .button-link {
+  margin-top: 1.5em;
+} */
+
+.sponsor-link {
+  /* 왜 블록을 차지하게 했을까? margin 적용하려고? */
+  display: block;
+  color: #0072b0;
+  font-weight: bold;
+  text-decoration: none;
 }
