@@ -39,12 +39,6 @@ header {
   clear: both;
 }
 
-/* .clearfix::after {
-  display: block;
-  content: " ";
-  clear: both;
-} */
-
 .container {
   max-width: 1080px;
   margin: 0 auto;
@@ -53,16 +47,12 @@ header {
 .media {
   float: left;
   margin: 0 1.5em 1.5em 0;
-  /* margin 제외하고 width 설정 */
-  /* 안그러면 원하지않는 줄바꿈 연출됨 */
   width: calc(50% - 1.5em);
   padding: 1.5em;
   background-color: #eee;
   border-radius: 0.5em;
 }
 
-/* target every odd media element */
-/* row마다 float clear하기 위해서 */
 .media:nth-child(odd) {
   clear: left;
 }
@@ -70,4 +60,16 @@ header {
 .media > img {
   width: 50%;
   object-fit: cover;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.media-body {
+  overflow: auto;
+  margin-top: 0;
+}
+
+/* user agent styles로 적용된 top margin 값 변경 */
+.media-body h4 {
+  margin-top: 0;
 }
